@@ -1,0 +1,431 @@
+/* Desktop-nav */
+.desktop-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    font-size: 2rem;
+    word-spacing: -10px;
+}
+.menu-items{
+    display: flex;
+    column-gap: 50px; 
+    font-size: 1.5rem; 
+}
+.menu-items a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: all 0.4s;
+    font-weight: 400;
+}
+.menu-items a:hover{
+
+    color: gray;
+    border-bottom: 1px gray solid;
+}
+/* Hamburgur Menu  */
+
+.hamburgur-nav {
+    display: none;
+    position: relative;
+
+}   
+
+
+.hamburgur-nav span{
+    font-size: 40px;
+    cursor: pointer;
+
+}
+.hamburgur-menu{
+
+    position: absolute;
+    top: 35px ;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px gray solid;
+
+
+}
+.hamburgur-menu  a{
+
+    text-decoration: none;
+    padding: 6px 8px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: 400;
+    font-size: 25px;
+
+}
+.hamburgur-menu  a:hover{
+
+   
+    color: gray;
+    
+
+}
+/* //// */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+/* Header section  */
+.header{
+
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    /* margin-bottom: 50px; */
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.header .profile{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.myinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.myinfo > *{
+    padding: 10px 0;
+}
+.myinfo h3{
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+ 
+}
+.myinfo h1{
+    font-size: 3rem;
+}
+.myinfo h2{
+
+    font-size: 1.75rem;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+
+}
+.myinfo .btn{
+
+    display: flex;
+    column-gap: 8px;
+
+}
+.btn p{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    font-size: 13px;
+    border: 1px black solid;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    cursor: pointer;
+}
+.btn p:hover{
+    background-color: black;
+}
+.myinfo .cv{
+    background-color: white;
+    color: black;
+}
+.myinfo .cv:hover{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+.social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social i{
+    font-size: 32px;
+    color: black;
+}
+
+/* about me  */
+.about {
+    margin: 50px 0;
+    padding-top: 4vh;
+    height: 96vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about h2{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(85, 85, 85);
+}
+.about h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.aboutinfo{
+    margin-top: 20px;
+    padding-bottom: 25px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-pic{
+    height: 400px;
+    width:400px ;
+    border-radius: 32px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+    justify-content: space-around;
+
+}
+.info .boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    padding: 40px;
+    border-radius: 32px;
+    border: 1px solid #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.box img{
+    width: 32px;
+    height: 32px;
+}
+.box h1{
+    font-size: 18px;
+
+}
+.box h2{
+    font-size: 16px;
+    
+}
+.desc{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #a3a3a3;
+    display: flex;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 600px;
+    text-align: justify;
+    line-height: 24px;
+    /* align-self: ; */
+
+    
+}
+
+
+/* *****  */
+/* experice  */
+.experience{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 15px;
+}
+.experience h2{
+    font-size: 16px;
+}
+.experience h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.experience-boxs{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 35px;
+
+}
+.experience .experience-box{
+    padding: 24px;
+    border-radius: 32px;
+    border: 1px solid #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    gap: 30px;
+}
+.boxtitle{
+    color: #a3a3a3;
+    font-size: 28px;
+}
+.experience .skills {
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+.experience .skills .skill{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+.skills .skill img{
+    width: 32px;
+}
+.skill .skilltitle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.skilltitle h2{
+
+    font-size: 18px;
+    /* font-weight: 500; */
+    color: black;
+
+
+}
+.skilltitle h3{
+    font-size: 16px;
+    color: #5555;
+    
+}
+
+
+
+
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+@media (max-width: 768px) { 
+
+    .menu-items{
+        display: none;
+
+    }
+    .hamburgur-nav{
+        display: block;
+    }
+    .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0px;
+
+    }
+    .header .profile{
+        height: 275px;
+        width: 275px;
+    }
+    .header h1{
+        font-size: 32px;
+    }
+    .header h2{
+        font-size: 20px;
+    }
+
+    .about-pic{
+        height: 275px;
+        width: 275px;
+    }
+    .myinfo{
+        padding-top: 10px;
+    }
+    .about{
+        margin-top: 0;
+    }
+    .about .boxes{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .about .box{
+        padding: 37px;
+    }
+    .about .desc{
+        margin-top: 10px;
+    }
+
+    .experience .experience-box {
+        padding: 20px;
+        border-radius: 32px;
+        border: 1px solid #a3a3a3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        gap: 26px;
+    }
+
+    .experience .skills {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .experience .skills .skill {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+    }
+ }

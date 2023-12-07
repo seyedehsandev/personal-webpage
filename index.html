@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/c44d08da96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <nav class="desktop-nav flex justify-around items-center h-[17vh]">
+        <div class="logo text-3xl lg:font-bold">EHSAN</div>
+        <div class="menu-items hidden lg:flex gap-x-10 text-2xl text-black">
+                <a href="#about" class="cursor-pointer py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">About</a>
+                <a href="#experience" class="cursor-pointer py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Experience</a>
+                <a href="#project" class="cursor-pointer py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Projects</a>
+                <a href="#contact" class="cursor-pointer py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Contact</a>
+        </div>
+        <div class="hamburgur-nav flex lg:hidden relative">
+            <span id="menu" class="flex material-symbols-outlined w-8 cursor-pointer">menu</span>
+            <span id="close" class="hidden material-symbols-outlined w-8 cursor-pointer">close</span>
+                <div class="hamburgur-menu z-50 absolute hidden top-5 right-4 flex-col justify-center items-center bg-white border border-solid border-gray-400">
+                    <a href="#about" class="no-underline px-2 py-1.5 cursor-pointer text-black transition-all text-2xl hover:text-gray-400">About</a>
+                    <a href="#experience" class="no-underline px-2 py-1.5 cursor-pointer text-black transition-all text-2xl hover:text-gray-400">Experience</a>
+                    <a href="#project" class="no-underline px-2 py-1.5 cursor-pointer text-black transition-all text-2xl hover:text-gray-400">Projects</a>
+                    <a href="#contact" class="no-underline px-2 py-1.5 cursor-pointer text-black transition-all text-2xl hover:text-gray-400">Contact</a>
+                </div>
+        </div>
+    </nav>
+    <div class="container flex flex-col gap-y-7 lg:gap-y-12 pb-10">
+          <!-- Header  -->
+    <section class="header h-[83vh] relative flex flex-col justify-center items-center gap-x-12 lg:flex-row lg:justify-center lg:items-center">
+        <img src="./profile.png" alt="" class="profile lg:w-[400px] w-[275px] rounded-full">
+        <div class="myinfo flex flex-col items-center justify-center pt-3 lg:pt-12 gap-3 lg:gap-6 ">
+            <h3 class="font-semibold text-gray-400">Hello,I'm</h3>
+            <h1 class="lg:text-5xl text-3xl lg:font-bold font-semibold">Seyed Ehsan</h1>
+            <h2 class="text-xl lg:text-2xl text-gray-400 font-semibold">Frontend Developer</h2>
+            <div class="btn flex gap-2">
+                <p class="cv font-semibold transition-all p-4 w-32  rounded-[32px] text-sm border border-black border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Download CV</p>
+                <p class="contact font-semibold transition-all p-4 w-32  rounded-[32px] text-sm border border-black border-solid text-center bg-gray-900 hover:bg-black text-white cursor-pointer" >Contact Info</p>
+            </div>
+            <div class="social flex gap-2.5">
+                <a href=""><i class="fa-brands fa-github text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin text-3xl"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <!-- about  -->
+    <section id="about" class="about relative h-fit pt-[4vh] text-center flex flex-col gap-2.5">
+        <h2 class="text-base font-light text-gray-400">Get To Know More</h2>
+        <h1 class="text-2xl font-semibold md:text-3xl lg:text-5xl lg:font-bold ">About Me</h1>
+        <div class="aboutinfo flex items-center justify-center flex-wrap gap-y-8 lg:gap-[50px] mt-5 pb-6">
+            <img src="./about-pic.png" alt="" class="about-pic rounded-[32px] lg:w-[400px] w-[275px]">
+            <div class="info flex flex-col justify-around gap-5 px-4 ">
+                <div class="boxes flex justify-around flex-wrap gap-4">
+                    <div class="box flex flex-col justify-center items-center gap-1 p-9 lg:p-10 rounded-[32px] border border-solid border-gray-400">
+                        <img class="w-8" src="./experience.png" alt="">
+                        <h1 class="text-lg text-gray-500">Experience</h1>
+                        <h2 class="text-base font-semibold">2+ years</h2>
+                        <h2 class="text-base font-semibold">Frontend Development</h2>
+                    </div>
+                    <div class="box flex flex-col justify-center items-center gap-1 p-9 lg:p-10 rounded-[32px] border border-solid border-gray-400">
+                        <img class="w-8" src="./education.png" alt="">
+                        <h1 class="text-lg text-gray-500">Education</h1>
+                        <h2 class="text-base font-semibold">B.Sc. Bachelors Degree</h2>
+                        <h2 class="text-base font-semibold">M.Sc. Masters Degree</h2>
+                    </div>
+                </div>
+                <div class="desc flex text-justify break-words max-w-[600px] font-medium text-lg mt-2.5 lg:mt-8 leading-6">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic quis reprehenderit et laborum, rem, dolore eum quod voluptate exercitationem nobis
+                        nihil esse debitis maxime facere minus
+                        sint delectus
+                        velit in eos quo officiis explicabo deleniti dignissimos.
+                        Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#experience" class="hidden lg:flex no-underline cursor-pointer absolute bottom-0 right-5"><img src="./arrow.png" alt="" class="w-8"></a>
+
+    </section>
+    <!-- experience -->
+    <section id="experience" class="experience relative h-fit  flex flex-col items-center justify-center gap-4 ">
+        <h2 class="text-base font-light text-gray-400">Explore My</h2>
+        <h1 class="text-5xl font-bold">Experience</h1>
+        <div class="experience-boxs mt-4 flex items-start justify-center flex-wrap gap-x-12 gap-y-9">
+            <!-- res  -->
+            <div class="experience-box flex flex-col items-center lg:w-[450px] w-[340px] gap-6 lg:gap-7 p-5 lg:p-6 rounded-[32px] border border-solid border-gray-300">
+                <h2 class="boxtitle text-gray-400 text-2xl">Frontend Development</h2>
+                <div class="skills flex flex-wrap justify-center gap-6  lg:gap-12 ">
+                    <!-- skill  -->
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+                    
+                 
+
+                </div>
+
+            </div>
+            <div class="experience-box lg:w-[450px] w-[340px] flex flex-col items-center gap-6 lg:gap-7 p-5 lg:p-6 rounded-[32px] border border-solid border-gray-300">
+                <h2 class="boxtitle text-gray-400 text-2xl ">Frontend Development</h2>
+                <div class="skills flex flex-wrap justify-center gap-6 lg:gap-12">
+                    <!-- skill  -->
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill flex items-start lg:items-start justify-center gap-2.5 lg:gap-4">
+                        <img src="./checkmark.png" alt="" class="w-8">
+                        <div class="skilltitle flex flex-col gap-1">
+                            <h2 class="text-black text-lg">HTML</h2>
+                            <h3 class="text-base text-gray-700">Experienced</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="#project" class="hidden lg:flex no-underline cursor-pointer absolute bottom-0 right-5"><img src="./arrow.png" alt="" class="w-8"></a>
+
+    </section>
+    <!-- projects  -->
+    <section id="project" class="projects relative h-fit  flex flex-col items-center justify-center gap-4 " >
+        <h2 class="text-base font-light text-gray-400">Browse My Recent</h2>
+        <h1 class="text-5xl font-bold">Projects</h1>
+        <div class="project-boxs mt-4 flex items-start justify-center flex-wrap gap-x-12 gap-y-9">
+            <!-- res  -->
+            <div class="project-box lg:w-[450px] w-[340px] flex flex-col items-center gap-6 lg:gap-7 p-5 lg:p-6 rounded-[32px] border border-solid border-gray-300">
+                <img src="./project-1.png" alt="" class="rounded-[32px]">
+                <h2 class="boxtitle text-black text-xl font-semibold">Weather Project</h2>
+                <div class="btn flex gap-2">
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Github</p>
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Live Demo</p>
+
+                </div>
+            </div>
+            <!-- -----  -->
+            <div class="project-box lg:w-[450px] w-[340px] flex flex-col items-center gap-6 lg:gap-7 p-5 lg:p-6 rounded-[32px] border border-solid border-gray-300">
+                <img src="./project-2.png" alt="" class="rounded-[32px]">
+                <h2 class="boxtitle text-black text-xl font-semibold">Ecommerce Project</h2>
+                <div class="btn flex gap-2">
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Github</p>
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Live Demo</p>
+                </div>
+            </div>
+            <!-- -------  -->
+            <div class="project-box lg:w-[900px] md:w-[680px] w-[340px]  flex flex-col items-center gap-6 lg:gap-7 p-5 lg:p-6 rounded-[32px] border border-solid border-gray-300">
+                <img src="./project-3.png" alt="" class="rounded-[32px]">
+                <h2 class="boxtitle text-black text-xl font-semibold">ToDo App Project</h2>
+                <div class="btn flex gap-2">
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Github</p>
+                    <p class="cv font-semibold transition-all p-3 w-36  rounded-[32px] text-sm border border-gray-400 border-solid text-center bg-gray-white hover:bg-black text-black hover:text-white cursor-pointer" >Live Demo</p>
+                </div>
+            </div>
+        </div>
+        <a href="#contact" class="hidden lg:flex no-underline cursor-pointer absolute bottom-0 right-5"><img src="./arrow.png" alt="" class="w-8"></a>
+
+    </section>
+    <!-- contact  -->
+    <section id="contact" class="projects h-fit  flex flex-col items-center justify-center gap-6 " >
+        <h2 class="text-base font-light text-gray-400">Get in Touch</h2>
+        <h1 class="text-5xl font-bold">Contact Me</h1>
+        <div class="contact-boxs flex items-start justify-center">
+            <!-- res  -->
+            <div class="project-box lg:w-[450px] w-[340px] flex flex-col items-center justify-center p-5 lg:p-5 rounded-[32px] border border-solid border-gray-400 ">
+                <div class="btn flex gap-10 justify-center items-center">
+                    <div class="flex justify-center items-center  gap-x-1.5">
+                        <img src="./email.png" alt="" class="w-8">
+                        <p class="text-base lg:text-lg font-medium hover:text-gray-500  cursor-pointer transition-all box-border">Example@gmail.com</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-x-1.5">
+                        <img src="./linkedin.png" alt="" class="w-8">
+                        <p class="text-base lg:text-lg font-medium hover:text-gray-500  cursor-pointer transition-all box-content">LinkedIn</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- -------  -->
+         
+        </div>
+    </section>
+    <section class="footer h-fit flex flex-col gap-y-5 ">
+        <div class="menu-items flex flex-col md:flex-row justify-center items-center gap-x-3  lg:gap-x-10 text-xl lg:text-2xl text-black">
+            <a href="#about" class="cursor-pointer py-2 lg:py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">About</a>
+            <a href="#experience" class="cursor-pointer py-2 lg:py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Experience</a>
+            <a href="#project" class="cursor-pointer py-2 lg:py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Projects</a>
+            <a href="#contact" class="cursor-pointer py-2 lg:py-4 no-underline hover:text-gray-400 hover:border-b border-t-gray-400 border-solid transition-all">Contact</a>
+    </div>
+    <p class="text-center text-gray-500 font-light lg:text-base text-sm">Copyright © 2023 John Doe. All Rights Reserved.</p>
+    </section>
+
+    </div>
+  
+    
+</body>
+</html>
